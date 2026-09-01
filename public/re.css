@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #fdbf2d, #000);
+}
+.container{
+    max-width: 800px;
+    width: 100%;
+    background:linear-gradient(150deg, #000, #fdbf2d);
+    padding: 25px 30px;
+    border-radius: 10px;
+
+}
+.container .title{
+    font-size: 35px;
+    font-weight: 500;
+    position: relative;
+    color: #fff;
+}
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg, #fdbf2d, #000);
+}
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .user-details .input-box{
+    margin: 20px 0 12px 0 ;
+    width: calc(100% / 2 - 20px);
+
+}
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #fff;
+
+}
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 10px;
+    border: 3px solid grey;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #fdbf2d;
+
+}
+form .gender-details .gender-title{
+    font-size: 20px;
+    font-weight: 500;
+
+}
+form .gender-details .category{
+  display: flex;
+  width: 80%;
+  margin: 14px 0;
+  justify-content: space-between;  
+
+}
+.gender-details .category label{
+display: flex;
+align-items: center;
+}
+.gender-details .category .dot{
+    height: 16px;
+    width: 16px;
+    background: red;
+    border-radius: 10px;
+    margin-right: 5px;
+    background: grey;
+}
+#dot-1:checked
+
+.submit{
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    width: 90px;
+    align-items: center;
+    justify-content: center;
+}
+.submit h1{
+    color: #fff;
+    border-radius: 30px;
+}
+.submit:hover{
+       background: linear-gradient(45deg, #fdbf2d, #000);
+       box-shadow: 1px 1px 20px #fdbf2d;
+       transform: scale(1.1);
+}
+.category{
+    justify-content: space-between;
+    padding: 0 5px 15px;
+}
