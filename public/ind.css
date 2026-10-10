@@ -245,9 +245,8 @@ body{
 
  }
  .btn-secondary{
-    background: goldenrod;
-    color: beige;
-    border: 2px solid goldenrod;
+    background:linear-gradient(120deg, #000, #fdbf2d) ;
+    color: #fff;
  }
  .btn-secondary:hover{
     background:linear-gradient(180deg, #fdbf2d, #000);
